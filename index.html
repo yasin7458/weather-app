@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <section class="left-panel">
+            <h2 class="logo">
+                WeatherInfo
+            </h2>
+            <div class="weather-info">
+                <div class="temperature">
+                    <h1 id="temp">31°</h1>
+                </div>
+                <div class="date-time">
+                    <h2 class="city-name">Rajkot</h2>
+                    <span id="time">14:33<p>Saturday, 25 July 2026</p></span>
+                </div>
+                <div class="weather-status">
+                    <img id="icon" src="https://openweathermap.org/img/wn/02d@2x.png">
+                    <h3 id="condition">Partly Cloudy</h3>
+                </div>
+            </div>
+
+        </section>
+
+        <aside class="sidebar">
+            <div class="search-box">
+                <input type="text" placeholder="Search Location..." id="search">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+
+            <div class="cities">
+                <p>Ahmedabad</p>
+                <p>Gandhinagar</p>
+                <p>Surat</p>
+                <p>Vadodara</p>
+            </div>
+            <hr>
+
+            <div class="details">
+                <h3>Weather Details</h3>
+                <div class="detail">
+                    <span>Cloudy</span>
+                    <span id="cloud">75%</span>
+                </div>
+
+                <div class="detail">
+                    <span>Humidity</span>
+                    <span id="humidity">75%</span>
+                </div>
+
+                <div class="detail">
+                    <span>Wind</span>
+                    <span id="wind">15 km/h</span>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="credit">Created with ❤️ by Yashin</div>
+        </aside>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
