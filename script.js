@@ -45,7 +45,7 @@ fetch(`https://api.weatherapi.com/v1/current.json?key=e26ee2f87b994c988631005522
             document.querySelector("#cloud").innerText = (data.current.cloud + "%");
             document.querySelector("#humidity").innerText = (data.current.humidity + "%");
             document.querySelector("#wind").innerText = (data.current.wind_kph + "km/h");
-        
+
             background(data.current.condition.code);
         });
     });
@@ -70,6 +70,8 @@ document.querySelector("button").onclick = function () {
 };
 
 document.querySelector(".cities").addEventListener("click", function (e) {
+
+    document.querySelector("#search").value = e.target.innerText;
 
     fetch(`https://api.weatherapi.com/v1/current.json?key=e26ee2f87b994c98863100552231608&q=${e.target.innerText}`)
         .then((response) => {
